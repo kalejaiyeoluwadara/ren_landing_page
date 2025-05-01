@@ -5,6 +5,7 @@ import ExploreRenSection from "./Sections/ExploreRenSection";
 import FeaturesSection from "./Sections/FeaturesSection";
 import ShareReviewsSection from "./Sections/ShareReviewsSection";
 import PricingSection from "./Sections/PricingSection";
+import MarketSection from "./Sections/MarketSection";
 export default function Home() {
   return (
    <main className="mt-20">
@@ -14,6 +15,7 @@ export default function Home() {
    <FeaturesSection />
    <ShareReviewsSection/>
    <PricingSection/>
+   <MarketSection/>
    </main>
   );
 }
