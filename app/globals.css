@@ -22,7 +22,7 @@
 
 @font-face {
   font-family: "Aeonik";
-  src: url("/Aeonik/Aeonik-Medium.ttf") format("truetype");
+  src: url("/Aeonik/Aeonik-Regular.ttf") format("truetype");
   /* font-weight: 300; */
   font-style: normal;
   font-display: swap;
@@ -50,7 +50,7 @@ input {
   @apply flex items-center justify-center;
 }
 .btn {
-  @apply px-6 py-3 rounded-full cursor-pointer;
+  @apply px-6 py-3 font-thin text-lg rounded-full cursor-pointer;
 }
 .btn_gray {
   @apply px-6 py-3 rounded-full bg-[#F4F4F4] text-black cursor-pointer;
@@ -60,12 +60,12 @@ input {
 }
 
 h2{
-  @apply text-5xl font-semibold
+  @apply text-5xl font-medium leading-12 tracking-[0.01rem] text-[#292929]
 }
 
 h3{
-  @apply font-semibold text-lg
+  @apply font-medium text-lg text-[#292929]
 }
 p{
-  @apply text-[#4F4F4F] 
+  @apply text-[#4F4F4F] font-light
 }

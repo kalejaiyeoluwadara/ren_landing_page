@@ -6,6 +6,8 @@ import twitter from "./images/twitter.png";
 import explore1 from "./images/explore1.png";
 import explore2 from "./images/explore2.png";
 import explore3 from "./images/explore3.png";
+import explore5 from "./images/explore5.png";
+import explore6 from "./images/explore6.png";
 
 export const images = {
   logo,
@@ -16,4 +18,7 @@ export const images = {
   explore1,
   explore2,
   explore3,
+  explore5,
+  explore6,
+
 };

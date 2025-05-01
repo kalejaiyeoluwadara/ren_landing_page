@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../components/shared/Button'
 
 function HeroSection() {
   return (
@@ -7,19 +8,16 @@ function HeroSection() {
         <button className='btn text-white primarybg rounded-md hover:bg-opacity-80 transition'>
         Verted Reviews 
         </button>
-        <h1 className='text-4xl mt-2 mb-4 font-bold md:w-[80%]'>
+        <h2 className=' mt-2 mb-4  md:w-[90%]'>
         Turn Conversations into Credible Reviews.
-        </h1>
-        <p className='text-gray-500 mb-7'>
+        </h2>
+        <p className='mb-7'>
         No apps to download. No forms to fill. Just send a Message to spark feedback that fuels your brand.
         </p>
         <div className='flex items-center gap-4'>
-            <button className='btn text-white primarybg rounded-md hover:bg-opacity-80 transition'>
-            Start Scaling
-            </button>
-            <button className=' bg-gray-100 btn text-black  rounded-md hover:bg-opacity-80 transition'>
-            Sign Up
-            </button>
+           <Button isPrimary={true} name='Start Scaling' />
+           <Button isPrimary={false} name='Sign up' />
+           
         </div>
       </section>
       <section className='h-[500px] bg-gray-100 rounded-md'></section>

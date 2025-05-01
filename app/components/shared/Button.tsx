@@ -2,7 +2,7 @@ import React from 'react'
 
 interface ButtonProps{
     name:string;
-    onClick:()=>void;
+    onClick?:()=>void;
     isPrimary:boolean;
 }
 function Button({onClick,name,isPrimary}:ButtonProps) {
