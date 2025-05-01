@@ -2,7 +2,7 @@ import React from "react";
 import { images } from "@/public/images";
 import { Icons } from "../components/icons";
 import Badge from "../components/shared/Badge";
-import FeatureCard from "../components/shared/FeatureCard";
+import ReviewCard from "../components/shared/ReviewCard";
 
 function MarketSection() {
   return (
@@ -15,7 +15,11 @@ function MarketSection() {
       Start for free, no credit card required.
       Upgrade when you need a plan that fits your needs.
       </p>
-     
+      <div className="grid grid-cols-3 gap-6 mt-12">
+        {[1, 2, 3].map((d, id) => {
+          return <ReviewCard key={d} />;
+        })}
+      </div>
 
      
     </div>
