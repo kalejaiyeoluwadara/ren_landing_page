@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Icons } from '../components/icons';
 import Badge from '../components/shared/Badge';
+import Button from '../components/shared/Button';
 
 // Types
 type BillingCycle = 'monthly' | 'annual';
@@ -24,11 +25,11 @@ interface PricingPlan {
 // Components
 const PricingHeader = () => {
   return (
-    <div className="text-center mb-12">
-      <Badge icon={<Icons.Wallet />} text="Best Value" />
-      <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+    <div className="text-center w-full flex-center flex-col mb-12">
+      <Badge icon={<Icons.Wallet />} text="Upgrade Plan" />
+      <h2 className="mb-6">
         Flexible plans that grow<br />with your needs
-      </h1>
+      </h2>
     </div>
   );
 };
@@ -99,20 +100,19 @@ const PricingCard = ({
 
   return (
     <div
-      className={`bg-white rounded-lg p-8 flex flex-col h-full ${
-        plan.highlighted ? 'border border-gray-200 shadow-lg' : ''
+      className={`bg-[#F4F4F4] rounded-xl p-8 flex flex-col h-full 
       }`}
     >
       <div className="mb-8">
         <h3 className="text-xl font-bold text-gray-800 mb-2">Ren {plan.name}</h3>
-        <div className="flex items-baseline mb-4">
+        <div className="flex items-baseline mb-1">
           <span className="text-3xl font-bold">${dollars}</span>
           <span className="text-3xl font-bold">.</span>
           <span className="text-3xl font-bold">{cents}</span>
           <span className="text-gray-600 ml-1">/Month</span>
         </div>
         {annualBilling && (
-          <div className="mb-4 text-sm">
+          <div className="mb-1 text-sm">
             <span className="text-gray-700">${annualCost}/year Billed Annually</span>
             <span className="ml-2 px-2 py-1 text-xs bg-green-100 text-green-800 rounded-full">
               Save 15%
@@ -122,18 +122,10 @@ const PricingCard = ({
         <p className="text-gray-600">{plan.description}</p>
       </div>
 
-      <div className="mt-auto">
-        <a
-          href={plan.buttonLink}
-          className={`block text-center py-3 px-6 rounded-md font-medium ${
-            plan.name === 'Free'
-              ? 'bg-red-500 text-white'
-              : 'bg-red-500 text-white'
-          } mb-6`}
-        >
-          {plan.buttonText}
-        </a>
-
+      <div className="">
+       <div className='mb-6'>
+       <Button name={plan.buttonText} isPrimary={true}/>
+       </div>
         {plan.name !== 'Free' && plan.name !== 'Starter' && (
           <p className="text-gray-700 font-medium mb-4">
             Everything in the {plan.name === 'Pro' ? 'Starter' : 'Free'} Plan, Plus:

@@ -50,7 +50,7 @@ input {
   @apply flex items-center justify-center;
 }
 .btn {
-  @apply px-6 py-3 font-thin text-lg rounded-full cursor-pointer;
+  @apply px-6 pt-2 pb-3 font-thin text-lg rounded-full cursor-pointer;
 }
 .btn_gray {
   @apply px-6 py-3 rounded-full bg-[#F4F4F4] text-black cursor-pointer;
