@@ -35,7 +35,7 @@ function NavBar() {
   if (shouldHideNav) return null; // hide nav bar entirely
 
   return (
-    <nav className="fixed top-0 left-0 z-50 w-full border-b border-[#EFEFEF] bg-white px-6 md:px-14 py-4">
+    <nav className="fixed top-0 left-0 z-50 w-full  bg-white px-6 md:px-14 py-4">
       <div className="flex items-center justify-between flex-wrap gap-6">
         {/* Logo Section */}
         <section className="flex gap-12 items-center">
@@ -86,14 +86,6 @@ function NavBar() {
 
         {/* CTA Button */}
         <div>
-          {/* <button
-            onClick={() => {
-              router.push("/new-review");
-            }}
-            className="btn text-white primarybg rounded-md hover:bg-opacity-80 transition"
-          >
-            New Review
-          </button> */}
           <button className="btn text-white primarybg rounded-md hover:bg-opacity-80 transition">
             New Review
           </button>

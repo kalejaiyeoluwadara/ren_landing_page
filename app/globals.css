@@ -58,3 +58,14 @@ input {
 .section-padding {
   @apply px-[60px];
 }
+
+h2{
+  @apply text-5xl font-semibold
+}
+
+h3{
+  @apply font-semibold text-lg
+}
+p{
+  @apply text-[#4F4F4F] 
+}
