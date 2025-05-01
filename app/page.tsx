@@ -4,6 +4,7 @@ import EraOfRenSection from "./Sections/EraOfRenSection";
 import ExploreRenSection from "./Sections/ExploreRenSection";
 import FeaturesSection from "./Sections/FeaturesSection";
 import ShareReviewsSection from "./Sections/ShareReviewsSection";
+import PricingSection from "./Sections/PricingSection";
 export default function Home() {
   return (
    <main className="mt-20">
@@ -12,6 +13,7 @@ export default function Home() {
    <ExploreRenSection />
    <FeaturesSection />
    <ShareReviewsSection/>
+   <PricingSection/>
    </main>
   );
 }
