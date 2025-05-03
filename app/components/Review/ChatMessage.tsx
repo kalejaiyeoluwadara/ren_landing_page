@@ -12,7 +12,7 @@ const ChatMessage = ({
   platform: string;
 }) => {
   return (
-    <div className="flex gap-3 bg-gray-100 p-2 rounded-lg items-start mb-2">
+    <div className="flex gap-3 bg-gray-100 px-4 py-3 rounded-xl items-start mb-2">
       <UserAvatar
         platform={platform}
         initials={sender
@@ -21,11 +21,13 @@ const ChatMessage = ({
           .join("")}
       />
       <div className="flex flex-col">
-        <div className="flex items-center gap-2">
-          <span className="font-medium">{sender}</span>
-          <span className="text-gray-500 text-sm">{time}</span>
+        <div className="flex items-center justify-between gap-2">
+          <span className="font-medium text-sm">{sender}</span>
+          <span className="text-gray-500 font-semibold text-[10px]">
+            {time}
+          </span>
         </div>
-        <p className="text-gray-700">{message}</p>
+        <p className="text-gray-700 text-sm">{message}</p>
       </div>
     </div>
   );

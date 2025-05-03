@@ -84,3 +84,7 @@ h3 {
 p {
   @apply text-[#4F4F4F] font-light;
 }
+
+.gray100 {
+  @apply bg-[#F4F4F4];
+}
