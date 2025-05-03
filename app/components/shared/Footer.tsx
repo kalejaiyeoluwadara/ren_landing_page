@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { Icons } from '../icons';
 import Image from 'next/image';
 import { images } from '@/public/images';
 

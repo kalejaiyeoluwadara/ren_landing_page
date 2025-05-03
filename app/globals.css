@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -20,16 +21,30 @@
   }
 }
 
-@font-face {
-  font-family: "Aeonik";
-  src: url("/Aeonik/Aeonik-Regular.ttf") format("truetype");
-  /* font-weight: 300; */
-  font-style: normal;
-  font-display: swap;
-}
-
 .Aeonik {
   font-family: "Aeonik", sans-serif;
+}
+
+.AnonymousPro {
+  font-family: Anonymous Pro, monospace;
+  font-weight: 400;
+}
+
+.AnonymousPro-bold {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 700;
+}
+
+.AnonymousPro-italic {
+  font-family: "Anonymous Pro", monospace;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.AnonymousPro-bold-italic {
+  font-family: "Anonymous Pro", monospace;
+  font-style: italic;
+  font-weight: 700;
 }
 
 body {
@@ -59,13 +74,13 @@ input {
   @apply px-[60px];
 }
 
-h2{
-  @apply text-5xl font-medium leading-12 tracking-[0.01rem] text-[#292929]
+h2 {
+  @apply text-5xl font-medium leading-12 tracking-[0.01rem] text-[#292929];
 }
 
-h3{
-  @apply font-medium text-lg text-[#292929]
+h3 {
+  @apply font-medium text-lg text-[#292929];
 }
-p{
-  @apply text-[#4F4F4F] font-light
+p {
+  @apply text-[#4F4F4F] font-light;
 }

@@ -8,9 +8,9 @@ function ExploreRenSection() {
   return (
     <div className="section-padding w-full flex items-start flex-col py-12">
       <Badge text="Supercharged Reviews" icon={<Icons.Charge/>} />
-      <h1 className="text-4xl w-[420px] font-bold mb-3">
+      <h2 className=" w-[420px]  mb-3">
         Ren is built for Scaling Businesses
-      </h1>
+      </h2>
       <p className="text-gray-500 mb-6 w-[370px]">
         Ren helps businesses collect, manage, and activate authentic feedback at
         scale.
