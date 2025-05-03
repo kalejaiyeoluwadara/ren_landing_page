@@ -5,7 +5,6 @@ const ReviewExample = ({
   time,
   platform,
   requestMessage,
-  reviewMessage,
 }: {
   user: string;
   time: string;

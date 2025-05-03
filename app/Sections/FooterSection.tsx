@@ -3,7 +3,7 @@ import ReviewExample from "../components/Review/ReviewExample";
 import Button from "../components/shared/Button";
 export default function ReviewSharingSection() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-6xl mx-auto py-8 px-4">
+    <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-6xl mx-auto py-8 ">
       {/* Left review example */}
       <div className="w-full md:w-1/3">
         <ReviewExample
