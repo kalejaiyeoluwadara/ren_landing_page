@@ -1,7 +1,6 @@
-import { useState } from "react";
-import { MessageSquare, ThumbsUp } from "lucide-react";
+import { ThumbsUp } from "lucide-react";
 import ReviewExample from "../components/Review/ReviewExample";
-
+import Button from "../components/shared/Button";
 export default function ReviewSharingSection() {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-6xl mx-auto py-8 px-4">
@@ -21,16 +20,14 @@ export default function ReviewSharingSection() {
         <div className="text-red-500 mb-4">
           <ThumbsUp size={64} fill="currentColor" strokeWidth={0} />
         </div>
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
+        <h4 className="mb-4 w-[90%] !text-3xl !leading-10">
           Share your Reviews with one click
-        </h2>
-        <p className="text-gray-600 mb-6">
+        </h4>
+        <p className=" mb-6">
           Start for free, no credit card required. Upgrade when you need a plan
           that fits your needs.
         </p>
-        <button className="bg-red-500 hover:bg-red-600 text-white font-medium py-3 px-8 rounded-full transition-colors">
-          Start Today
-        </button>
+        <Button isPrimary={true} name="Start Today" />
       </div>
 
       {/* Right review example */}

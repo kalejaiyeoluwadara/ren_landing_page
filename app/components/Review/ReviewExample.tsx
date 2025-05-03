@@ -14,7 +14,7 @@ const ReviewExample = ({
   reviewMessage: string;
 }) => {
   return (
-    <div className="bg-white rounded-lg shadow-sm p-4 mb-4">
+    <div className="bg-white  p-4 mb-4">
       <ChatMessage
         sender={user}
         message="The automation for sharing feedback to X is a big..."
