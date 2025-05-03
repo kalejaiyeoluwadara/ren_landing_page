@@ -170,7 +170,7 @@ export const Icons = {
       </defs>
     </svg>
   ),
-  
+
   WhatsappIcon: () => (
     <svg
       width="52"
@@ -299,7 +299,7 @@ export const Icons = {
       />
     </svg>
   ),
-  
+
   Guaranteed: () => (
     <svg
       width="20"
@@ -318,6 +318,27 @@ export const Icons = {
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
+      />
+    </svg>
+  ),
+  Gaurd: () => (
+    <svg
+      width="24"
+      height="25"
+      viewBox="0 0 24 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 13.25L11.25 15.5L15 10.25M12 3.214C9.73574 5.36423 6.72026 6.54357 3.598 6.5C3.20084 7.70998 2.99898 8.9755 3 10.249C3 15.841 6.824 20.539 12 21.872C17.176 20.54 21 15.842 21 10.25C21 8.94 20.79 7.679 20.402 6.499H20.25C17.054 6.499 14.15 5.251 12 3.214Z"
+        fill="#F22F46"
+      />
+      <path
+        d="M9 13.25L11.25 15.5L15 10.25M12 3.214C9.73574 5.36423 6.72026 6.54357 3.598 6.5C3.20084 7.70998 2.99898 8.9755 3 10.249C3 15.841 6.824 20.539 12 21.872C17.176 20.54 21 15.842 21 10.25C21 8.94 20.79 7.679 20.402 6.499H20.25C17.054 6.499 14.15 5.251 12 3.214Z"
+        stroke="white"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </svg>
   ),
