@@ -1,6 +1,7 @@
 import { ThumbsUp } from "lucide-react";
 import ReviewExample from "../components/Review/ReviewExample";
 import Button from "../components/shared/Button";
+import { Icons } from "../components/icons";
 export default function ReviewSharingSection() {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-6xl mx-auto py-8 ">
@@ -18,7 +19,7 @@ export default function ReviewSharingSection() {
       {/* Middle CTA section */}
       <div className="w-full md:w-1/3 text-center flex flex-col items-center">
         <div className="text-red-500 mb-4">
-          <ThumbsUp size={64} fill="currentColor" strokeWidth={0} />
+          <Icons.ThumbUp />
         </div>
         <h4 className="mb-4 w-[90%] !text-3xl !leading-10">
           Share your Reviews with one click

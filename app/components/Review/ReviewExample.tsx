@@ -20,15 +20,19 @@ const ReviewExample = ({
         time={time}
         platform={platform}
       />
-      <div className="ml-12">
-        <div className="text-gray-500 ml-3 mt-2">Ren</div>
-        <ReviewMessage message={requestMessage} />
-        <div className="text-gray-800">{user.split(" ")[0]}</div>
-        <div className="bg-red-500 text-white p-3 rounded-xl mb-4">
-          <p>Superfast customer support, amazing team! 4</p>
+      <div className="">
+        <div className="ml-12">
+          <div className="text-gray-500 ml-3 mt-2">Ren</div>
+          <ReviewMessage message={requestMessage} />
         </div>
-        <div className="text-gray-500 my-2">Ren</div>
-        <ReviewMessage message={requestMessage} />
+        <div className="text-gray-800 ml-3">{user.split(" ")[0]}</div>
+        <div className="bg-red-500 text-white p-3 rounded-xl mb-4">
+          <span>Superfast customer support, amazing team! 4</span>
+        </div>
+        <div className="ml-12">
+          <div className="text-gray-500 ml-3 mt-2">Ren</div>
+          <ReviewMessage message={requestMessage} />
+        </div>
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ import explore3 from "./images/explore3.png";
 import explore5 from "./images/explore5.png";
 import explore6 from "./images/explore6.png";
 import man_svg from "./images/man_svg.svg";
+import trail from "./images/trail.svg";
 
 export const images = {
   logo,
@@ -22,4 +23,5 @@ export const images = {
   explore5,
   explore6,
   man_svg,
+  trail,
 };
