@@ -10,7 +10,7 @@ import FooterSection from "./Sections/FooterSection";
 export default function Home() {
   return (
     <main className="w-full">
-      <div className="max-w-7xl mx-auto">
+      <div className="md:max-w-7xl mx-auto">
         <HeroSection />
         <EraOfRenSection />
         <ExploreRenSection />

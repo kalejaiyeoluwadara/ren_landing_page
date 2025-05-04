@@ -7,10 +7,8 @@ import FeatureCard from "../components/shared/FeatureCard";
 function ExploreRenSection() {
   return (
     <div className="section-padding w-full flex items-start flex-col py-12">
-      <Badge text="Supercharged Reviews" icon={<Icons.Charge/>} />
-      <h2 className=" w-[420px]  mb-3">
-        Ren is built for Scaling Businesses
-      </h2>
+      <Badge text="Supercharged Reviews" icon={<Icons.Charge />} />
+      <h2 className=" w-[420px]  mb-3">Ren is built for Scaling Businesses</h2>
       <p className="text-gray-500 mb-6 w-[370px]">
         Ren helps businesses collect, manage, and activate authentic feedback at
         scale.
@@ -19,7 +17,7 @@ function ExploreRenSection() {
 
       <section className="grid mt-12 grid-cols-3 gap-5">
         <FeatureCard
-          image={images.explore1}
+          image={images.Cycle}
           title="Real Conversations, Real Feedback"
           description="Personalized Message review requests Reach customers where they feel most comfortable"
         />
@@ -30,7 +28,7 @@ function ExploreRenSection() {
           className="pt-20"
         />
         <FeatureCard
-          image={images.explore3}
+          image={images.AI_analysis}
           title="Real Conversations, Real Feedback"
           description="Personalized Message review requests Reach customers where they feel most comfortable"
         />

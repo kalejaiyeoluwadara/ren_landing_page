@@ -10,7 +10,7 @@ import explore5 from "./images/explore5.png";
 import explore6 from "./images/explore6.png";
 import man_svg from "./images/man_svg.svg";
 import trail from "./images/trail.svg";
-import cycle from "./images/cycle.svg";
+import Cycle from "./images/Cycle.svg";
 import AI_analysis from "./images/AI_analysis.svg";
 import Mobbin from "./images/Mobbin.svg";
 import Ren from "./images/Ren.svg";
@@ -28,7 +28,7 @@ export const images = {
   explore6,
   man_svg,
   trail,
-  cycle,
+  Cycle,
   AI_analysis,
   Mobbin,
   Ren,
