@@ -9,15 +9,17 @@ import MarketSection from "./Sections/MarketSection";
 import FooterSection from "./Sections/FooterSection";
 export default function Home() {
   return (
-    <main className="mt-20">
-      <HeroSection />
-      <EraOfRenSection />
-      <ExploreRenSection />
-      <FeaturesSection />
-      <ShareReviewsSection />
-      <PricingSection />
-      <MarketSection />
-      <FooterSection />
+    <main className="w-full">
+      <div className="max-w-7xl mx-auto">
+        <HeroSection />
+        <EraOfRenSection />
+        <ExploreRenSection />
+        <FeaturesSection />
+        <ShareReviewsSection />
+        <PricingSection />
+        <MarketSection />
+        <FooterSection />
+      </div>
     </main>
   );
 }

@@ -7,32 +7,19 @@ import { usePathname, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import React from "react";
 import { cn } from "@/lib/utils";
+import Button from "./Button";
+import { Icons } from "../icons";
 
 const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "Reviews", href: "/reviews" },
-  { name: "Ren Feed", href: "/ren-feed" },
-  { name: "Notifications", href: "/notifications" },
-  { name: "Account", href: "/account" },
-];
-
-// List of routes where the navbar should NOT be shown
-const hideNavOnRoutes = [
-  "/login",
-  "/register",
-  "/new-review",
-  "/business-info",
-  "/user-plan",
+  { name: "Features", href: "/" },
+  { name: "Integrations", href: "/reviews" },
+  { name: "Pricing", href: "/ren-feed" },
+  { name: "Reviews", href: "/notifications" },
 ];
 
 function NavBar() {
   const pathname = usePathname();
   const router = useRouter();
-
-  // Check if current path matches any hidden routes
-  const shouldHideNav = hideNavOnRoutes.includes(pathname);
-
-  if (shouldHideNav) return null; // hide nav bar entirely
 
   return (
     <nav className="fixed top-0 left-0 z-50 w-full  bg-white px-6 md:px-14 py-4">
@@ -59,7 +46,7 @@ function NavBar() {
               return (
                 <li key={name} className="relative list-none">
                   <Link
-                    href={href}
+                    href={"/"}
                     className={cn(
                       "transition-colors duration-300 hover:text-primary",
                       isActive ? "text-black font-semibold" : "text-gray-500"
@@ -85,9 +72,13 @@ function NavBar() {
         </section>
 
         {/* CTA Button */}
-        <div>
-          <button className="btn text-white primarybg rounded-md hover:bg-opacity-80 transition">
-            New Review
+        <div className="flex items-center gap-4">
+          <Button isPrimary={false} name="Login" />
+          <button className="btn relative z-20 text-white bg-black rounded-md hover:bg-opacity-80  transition">
+            <span className="mt-1 flex items-center gap-2">
+              Follow us on
+              <Icons.Twitter />
+            </span>
           </button>
         </div>
       </div>

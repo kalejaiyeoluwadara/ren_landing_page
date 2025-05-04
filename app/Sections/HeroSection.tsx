@@ -7,7 +7,7 @@ import SpecialButton from "../components/SpecialButton";
 
 function HeroSection() {
   return (
-    <div className="section-padding py-12 grid grid-cols-1 md:grid-cols-2 gap-10">
+    <div className="section-padding mt-12 py-12 grid grid-cols-1 md:grid-cols-2 gap-10">
       <section className="mt-12">
         <SpecialButton />
         <h2 className=" mt-2 mb-4  md:w-[90%]">
