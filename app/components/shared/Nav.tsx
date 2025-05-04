@@ -35,7 +35,7 @@ function NavBar() {
                 width={40}
                 alt="Ren AI logo"
               />
-              <p className="text-lg font-semibold">Ren AI</p>
+              <p className="text-lg font-semibold">Ren</p>
             </div>
           </Link>
 
@@ -141,7 +141,7 @@ function NavBar() {
                 );
               })}
             </ul>
-            <div className="flex flex-col gap-4 mt-4 pt-4 border-t">
+            <div className="flex flex-col gap-4 mt-4 pt-4 border-gray-100 border-t">
               <Button isPrimary={false} name="Login" />
               <button className="btn relative z-20 text-white bg-black rounded-md hover:bg-opacity-80 transition w-full">
                 <span className="mt-1 flex items-center justify-center gap-2">

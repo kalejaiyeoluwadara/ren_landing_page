@@ -3,9 +3,8 @@ import "./globals.css";
 import NavBar from "./components/shared/Nav";
 import Footer from "./components/shared/Footer";
 
-
 export const metadata: Metadata = {
-  title: "Ren AI",
+  title: "Ren",
   description: "Ren AI",
 };
 
