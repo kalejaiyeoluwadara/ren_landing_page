@@ -8,7 +8,7 @@ import SpecialButton from "../components/SpecialButton";
 function HeroSection() {
   return (
     <div className="section-padding mt-12 py-12 grid grid-cols-1 md:grid-cols-2 gap-10">
-      <section className="mt-12 md:block flex flex-col flex-center">
+      <section className="mt-12 md:block flex flex-col items-center justify-center">
         <SpecialButton />
         <h2 className=" mt-2 mb-4 mobile_center  md:w-[90%]">
           Turn Conversations into Credible Reviews.

@@ -28,11 +28,14 @@ function ExploreRenSection() {
           title="Instant Integration, Instant Insights"
           description="Ren collects and analyses responses in real-time, delivering actionable insights."
           className="pt-20"
+          textClassName="-translate-y-6"
         />
         <FeatureCard
           image={images.AI_analysis}
           title="Real Conversations, Real Feedback"
           description="Personalized Message review requests Reach customers where they feel most comfortable"
+          className="relative overflow-hidden"
+          imageClassName="absolute top-10 -right-2"
         />
       </section>
     </div>

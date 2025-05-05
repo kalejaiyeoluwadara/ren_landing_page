@@ -3,9 +3,7 @@
 import { images } from "@/public/images";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import { motion, AnimatePresence } from "framer-motion";
-import React, { useState } from "react";
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import Button from "./Button";
 import { Icons } from "../icons";
@@ -19,8 +17,6 @@ const navLinks = [
 
 function NavBar() {
   const pathname = usePathname();
-  const router = useRouter();
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 z-50 w-full bg-white px-6 md:px-14 py-4">
@@ -35,7 +31,7 @@ function NavBar() {
                 width={40}
                 alt="Ren AI logo"
               />
-              <span className="text-lg font-medium">Ren</span>
+              <span className="text-lg font-semibold">Ren</span>
             </div>
           </Link>
 
