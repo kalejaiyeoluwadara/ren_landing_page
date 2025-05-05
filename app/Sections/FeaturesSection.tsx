@@ -28,7 +28,8 @@ function FeaturesSection() {
           image={images.Mobbin}
           title="Ren Feed"
           description="Discover businesses through a social feed of real customer reviews. Reviews to build credibility and connect with potential customers."
-          className="md:w-1/2"
+          className="md:w-1/2 relative overflow-hidden"
+          imageClassName="absolute top-8 -right-2"
         />
       </section>
     </div>
