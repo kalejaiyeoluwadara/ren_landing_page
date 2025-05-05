@@ -20,6 +20,13 @@
     --foreground: #171717;
   }
 }
+@font-face {
+  font-family: "Aeonik";
+  src: url("/Aeonik/Aeonik-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 .Aeonik {
   font-family: "Aeonik", sans-serif;
@@ -75,17 +82,17 @@ input {
 }
 
 h2 {
-  @apply md:text-5xl text-3xl font-medium md:leading-12 tracking-[0.01rem] text-[#292929];
+  @apply md:text-5xl text-3xl font-semibold md:leading-12 tracking-[0.01rem] text-[#292929];
 }
 
 h3 {
-  @apply font-medium text-lg text-[#292929];
+  @apply font-semibold text-lg text-[#292929];
 }
 .mobile_center {
   @apply md:text-start text-center;
 }
 p {
-  @apply text-[#4F4F4F] md:text-base text-sm font-light;
+  @apply text-[#4F4F4F] md:text-base text-sm font-thin;
 }
 
 .gray100 {
