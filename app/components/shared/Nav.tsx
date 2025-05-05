@@ -35,7 +35,7 @@ function NavBar() {
                 width={40}
                 alt="Ren AI logo"
               />
-              <p className="text-lg font-semibold">Ren</p>
+              <p className="text-lg font-semibold">Ren AI</p>
             </div>
           </Link>
 
@@ -50,21 +50,10 @@ function NavBar() {
                     href={"/"}
                     className={cn(
                       "transition-colors duration-300 hover:text-primary",
-                      isActive ? "text-black font-semibold" : "text-gray-500"
+                      isActive ? "" : "text-gray-500"
                     )}
                   >
                     {name}
-                    {isActive && (
-                      <motion.div
-                        layoutId="underline"
-                        className="absolute left-0 right-0 -bottom-1 h-[2px] bg-black rounded-full"
-                        transition={{
-                          type: "spring",
-                          stiffness: 500,
-                          damping: 30,
-                        }}
-                      />
-                    )}
                   </Link>
                 </li>
               );
@@ -141,7 +130,7 @@ function NavBar() {
                 );
               })}
             </ul>
-            <div className="flex flex-col gap-4 mt-4 pt-4 border-gray-100 border-t">
+            <div className="flex flex-col gap-4 mt-4 pt-4 border-t">
               <Button isPrimary={false} name="Login" />
               <button className="btn relative z-20 text-white bg-black rounded-md hover:bg-opacity-80 transition w-full">
                 <span className="mt-1 flex items-center justify-center gap-2">
